@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Search</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="container">
+        <h1 class="center-align">Artwork Search</h1>
+        <form id="search-form">
+            <div id="error-message" style="display:none; color: red;"></div>
+
+            <div class="input-field">
+                <input id="search-term" type="text" class="validate">
+                <label for="search-term">Search Term</label>
+            </div>
+            <div class="center-align">
+                <button type="submit" class="btn waves-effect waves-light">Search</button>
+            </div>
+        </form>
+        <table id="results" class="striped responsive-table">
+            <thead>
+                <tr>
+                    <th>Object ID</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
